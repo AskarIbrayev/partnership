@@ -1,0 +1,19 @@
+
+
+$primary:       #FF8C05;
+$secondary:     #343A40;
+
+$light:         #F7F7F7;
+
+$header-height: 56px;
+$sidebar-width: 316px;
+
+
+
+$carousel-indicator-width:           10px;
+$carousel-indicator-height:          10px;
+$carousel-indicator-spacer:          5px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $primary;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

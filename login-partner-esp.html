@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Вход Партнера по ЭЦП</title>
+</head>
+<body>
+<header class="header bg-primary">
+</header>
+<div class="container">
+    <div class="login-page">
+        <form class="form">
+            
+            <div class="form--logo">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div class="form--title">Войти</div>
+
+            <div class="login-type mb-4">
+                <a href="login-partner-iin.html" class="login-type-item">ИИН/БИН</a>
+                <a class="login-type-item  text-primary">ЭЦП</a>
+            </div>
+            <div class="login-type-line login-type-line-esp"></div>
+            
+            <label for="keystore" class="text-primary">Тип хранилища ключа:</label>
+            <select name="keystore" id="keystore" class="form-select mb-5">
+                <option selected>Ваш Компьютер</option>
+                <option value="">Казтокен</option>
+            </select>
+            
+            <label for="key" class="text-primary">Выбрать сертификат ЭЦП из файла</label>
+            <input type="file" name="key" id="key" class="form-control form-control-file mb-4">
+            
+            <!-- <div class="password-input-container">
+                <input type="password" class="form-control" placeholder="Пароль" required>
+                <span class="password-show-hide">
+                    <img src="images/svg/eye.svg" alt="">
+                </span>
+            </div>
+            <a href="#" class="password-restore text-primary small-text d-block text-end mt-2 mb-4">Забыли пароль?</a> -->
+            
+            <!-- <input type="submit" class="btn btn-primary w-100" value="Войти"> -->
+            
+            <a href="#" class="d-block text-decoration-underline text-center">Войти как сотрудник</a>
+            
+        </form>
+    
+    </div>
+
+</div>
+
+
+<script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>

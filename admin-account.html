@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Кабинет администратора</title>
+</head>
+<body>
+<header class="header bg-primary">
+    <div class="container">
+        <div class="header--inner">
+            <div class="navtoggle navtoggle-sidebar">
+                <span></span>
+            </div> 
+            <a href="index.html"><img src="images/logo.png" class="header--inner-logo" alt="company logo"></a>
+            <ul class="header--inner-nav d-none">
+                <li>
+                    <a href="mailto:mail@example.com" class="header--link" >mail@example.com</a>
+                </li>
+                <li>
+                    <a href="tel:+77750070647" class="header--link">+7 (775) 007-06-47</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link" target="_blank">Наш Instagram</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">Наши адреса</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">Написать в Whatsapp</a>
+                </li>
+            </ul>
+            <ul class="header--inner-nav">
+                <li>
+                    <a href="./index.html" class="header--link" >Главная</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">________</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link" target="_blank">Платежи</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">________</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">________</a>
+                </li>
+            </ul>
+            <div class="header--inner-login">
+                <span class="notification-container">
+                    <img src="images/svg/notification.svg" class="notification">
+                    <div class="notification-circle-container">
+                        <img src="images/svg/notification-circle.svg">
+                        <span class="notification-count">1</span>
+                    </div>
+                </span>
+                <button class="header--inner-login" type="button" id="">
+                    <img src="images/svg/login.svg" alt="login">
+                    <span class="header--inner-login-text">Выйти</span>
+                </button>
+            </div>
+            <div class="header--inner-login d-none dropdown">
+                <button class="header--inner-login" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/svg/login.svg" alt="login">
+                    <span class="header--inner-login-text">Войти</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="./manager-account.html">Менеджер</a></li>
+                    <li><a class="dropdown-item" href="./partner-account.html">Партнер</a></li>
+                    <li><a class="dropdown-item" href="./admin-account.html">Администратор</a></li>
+                </ul>
+            </div>
+            <div class="navtoggle navtoggle-header">
+                <span></span>
+            </div>  
+             
+        </div>
+    </div>
+</header>
+
+<aside class="sidebar">
+    <ul class="sidebar--nav">
+        <li>
+            <a href="#" class="sidebar--nav--item">
+                <img src="images/svg/sidebar-icons/account.svg" alt="">
+                Coffee Boom
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar--nav--item">
+                <img src="images/svg/sidebar-icons/place.svg" alt="">
+                Город
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar--nav--item">
+                <img src="images/svg/sidebar-icons/filials.svg" alt="">
+                Филиалы
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar--nav--item active">
+                <img src="images/svg/sidebar-icons/managers.svg" alt="">
+                Менеджеры
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar--nav--item">
+                <img src="images/svg/sidebar-icons/clients.svg" alt="">
+                Пайщики
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar--nav--item">
+                <img src="images/svg/sidebar-icons/discount.svg" alt="">
+                Акции, скидки, бонусы
+            </a>
+        </li>
+    </ul>
+</aside>
+<!-- MAIN SECTION -->
+<section class="main-account">
+    <div class="container">
+        <div class="row filter">
+            <div class="col-lg-4 col-md-6">
+                <div class="filter-input form-control">
+                    <label for="">По ФИО</label>
+                    <input type="text" placeholder="Введите данные">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="filter-input form-control">
+                    <label for="">По номеру телефона</label>
+                    <input type="text" placeholder="Введите данные">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="filter-btn-container text-center">
+                    <button type="submit" class="btn btn-gray">Применить фильтр</button>
+                    <span id="reset-filter">Сбросить фильтр</span>
+                </div>
+            </div>
+        </div>
+        <div class="user-list">
+            <ul class="user-list--header">
+                <li>№ П/П</li>
+                <li>ФИО</li>
+                <li>ИИН</li>
+                <li class="user-list-email">E-mail</li>
+                <li>Статус</li>
+                <li class="text-end">Действие</li>
+            </ul>
+            <ul class="user-list--item">
+                <li>1</li>
+                <li>Иванов Иван Иванович</li>
+                <li>12345678910</li>
+                <li class="user-list-email">ivanov@mail.ru</li>
+                <li>Active</li>
+                <li class="user-list--item--action">
+                    <img src="images/svg/edit-icon.svg" data-bs-toggle="modal" data-bs-target="#editManagerModal" alt="">
+                    <img src="images/svg/delete-icon.svg" alt="">
+                </li>
+            </ul>
+            <ul class="user-list--item">
+                <li>2</li>
+                <li>Иванов Иван Иванович</li>
+                <li>12345678910</li>
+                <li class="user-list-email">ivanov@mail.ru</li>
+                <li>Active</li>
+                <li class="user-list--item--action">
+                    <img src="images/svg/edit-icon.svg" data-bs-toggle="modal" data-bs-target="#editManagerModal" alt="">
+                    <img src="images/svg/delete-icon.svg" alt="">
+                </li>
+            </ul>
+            <ul class="user-list--item">
+                <li>3</li>
+                <li>Иванов Иван Иванович</li>
+                <li>12345678910</li>
+                <li class="user-list-email">ivanov@mail.ru</li>
+                <li>Active</li>
+                <li class="user-list--item--action">
+                    <img src="images/svg/edit-icon.svg" data-bs-toggle="modal" data-bs-target="#editManagerModal" alt="">
+                    <img src="images/svg/delete-icon.svg" alt="">
+                </li>
+            </ul>
+            <ul class="user-list--item">
+                <li>4</li>
+                <li>Иванов Иван Иванович</li>
+                <li>12345678910</li>
+                <li class="user-list-email">ivanov@mail.ru</li>
+                <li>Active</li>
+                <li class="user-list--item--action">
+                    <img src="images/svg/edit-icon.svg" data-bs-toggle="modal" data-bs-target="#editManagerModal" alt="">
+                    <img src="images/svg/delete-icon.svg" alt="">
+                </li>
+            </ul>
+            <ul class="user-list--item">
+                <li>5</li>
+                <li>Иванов Иван Иванович</li>
+                <li>12345678910</li>
+                <li class="user-list-email">ivanov@mail.ru</li>
+                <li>Active</li>
+                <li class="user-list--item--action">
+                    <img src="images/svg/edit-icon.svg" data-bs-toggle="modal" data-bs-target="#editManagerModal" alt="">
+                    <img src="images/svg/delete-icon.svg" alt="">
+                </li>
+            </ul>
+        </div>
+        <span class="text-center d-none fw-bolder ">У Вас нет пользователей</span>
+
+        <div class="user-list--footer">
+            <span>Строк на странице: </span>
+            <select name="" id="">
+                <option value="0">0</option>
+                <option value="3">3</option>
+                <option selected value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+        <!-- Button trigger modal -->
+        <div class="text-center my-5">
+            <button class="btn btn-primary shadow-sm" data-bs-toggle="modal" data-bs-target="#addManagerModal">Добавить сотрудника</button>
+        </div>
+    </div>
+</section>
+
+<!-- Modal добавить менеджера-->
+<div class="modal fade" id="addManagerModal" tabindex="-1" aria-labelledby="addManagerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <form>
+                <div class="form--title">Добавить  менеджера</div>
+                
+                <label for="">ФИО <span class="text-danger">*</span></label>
+                <input type="text" class="form-control mb-4" required>
+                
+                <label for="phone">Телефон <span class="text-danger">*</span></label>
+                <input type="tel" name="phone" class="form-control mb-5" placeholder="+7 (___) ___-__-__" required>
+                
+                <div class="modal-btn-container">
+                    <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary btn-primary-sm w-100">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal редактировать менеджера-->
+
+<div class="modal fade" id="editManagerModal" tabindex="-1" aria-labelledby="editManagerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <form>
+                <div class="form--title">Редактировать  менеджера</div>
+                
+                <label for="">ФИО <span class="text-danger">*</span></label>
+                <input type="text" class="form-control mb-4" required>
+                
+                <label for="phone">Телефон <span class="text-danger">*</span></label>
+                <input type="tel" name="phone" class="form-control mb-5" placeholder="+7 (___) ___-__-__" required>
+                
+                <div class="modal-btn-container">
+                    <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary btn-primary-sm w-100">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>e-commerce</title>
+</head>
+<body>
+<header class="header header-landing">
+    <div class="container">
+        <div class="header--inner">
+            <ul class="header--inner-nav">
+                <li>
+                    <a href="mailto:mail@example.com" class="header--link" >mail@example.com</a>
+                </li>
+                <li>
+                    <a href="tel:+77750050505" class="header--link">+7 (775) 005-05-05</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link" target="_blank">Наш Instagram</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">Наши адреса</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">Написать в Whatsapp</a>
+                </li>
+            </ul>
+            <div class="header--inner-login d-none">
+                <span class="notification-container">
+                    <img src="images/svg/notification.svg" class="notification">
+                    <div class="notification-circle-container">
+                        <img src="images/svg/notification-circle.svg">
+                        <span class="notification-count">1</span>
+                    </div>
+                </span>
+                <button class="header--inner-login" type="button" id="">
+                    <img src="images/svg/login.svg" alt="login">
+                    <span class="header--inner-login-text">Выйти</span>
+                </button>
+            </div>
+            <div class="header--inner-login dropdown">
+                <button class="header--inner-login" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/svg/login.svg" alt="login">
+                    <span class="header--inner-login-text">Войти</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="./manager-account.html">Менеджер</a></li>
+                    <li><a class="dropdown-item" href="./partner-account.html">Партнер</a></li>
+                    <li><a class="dropdown-item" href="./admin-account.html">Администратор</a></li>
+                </ul>
+            </div>
+            <div class="navtoggle navtoggle-header">
+                <span></span>
+            </div>
+        </div>  
+    </div>
+</header>
+<!-- MAIN SECTION -->
+<section class="main">
+    <nav class="nav">
+        <div class="container">
+            <ul>
+                <li class="me-5">
+                    <a href="#"><img src="images/logo.png" class="logo" alt="company logo"></a>
+                </li>
+                <li>
+                    <a href="#" class="nav--link">Главная</a>
+                </li>
+                <li>
+                    <a href="#" class="nav--link">О нас</a>
+                </li>
+                <li>
+                    <a href="#" class="nav--link">Программы</a>
+                </li>
+                <li>
+                    <a href="#" class="nav--link">Гарантии</a>
+                </li>
+                <li>
+                    <a href="#" class="nav--link">Новости</a>
+                </li>
+                <li>
+                    <a href="#" class="nav--link">Инструкции</a>
+                </li>
+                <li>
+                    <a href="#" class="nav--link">Онлайн оплата</a>
+                </li>
+                <li>
+                    <a href="#" class="nav--link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="rounded-circle" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="rounded-circle" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="rounded-circle" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="carousel-item--container row">
+                      <div class="carousel--content col-lg-6">
+                          <h4 class="carousel--content-suptitle text-uppercase text-primary">спецтехника</h3>
+                          <h2 class="carousel--content-title">Выгодное приобретение спецтехники</h2>
+                          <p class="carousel--content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora error non, aliquam obcaecati rem eligendi cumque sapiente atque maxime modi!</p>
+                      </div>
+                      <div class="carousel--image col-lg-6">
+                          <img src="images/carousel-img-1.png" alt="image-1">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item--container row">
+                    <div class="carousel--content col-lg-6">
+                        <h4 class="carousel--content-suptitle text-uppercase text-primary">спецтехника</h3>
+                        <h2 class="carousel--content-title">Выгодное приобретение спецтехники</h2>
+                        <p class="carousel--content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora error non, aliquam obcaecati rem eligendi cumque sapiente atque maxime modi!</p>
+                    </div>
+                    <div class="carousel--image col-lg-6">
+                        <img src="images/carousel-img-1.png" alt="image-1">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item--container row">
+                    <div class="carousel--content col-lg-6">
+                        <h4 class="carousel--content-suptitle text-uppercase text-primary">спецтехника</h3>
+                        <h2 class="carousel--content-title">Выгодное приобретение спецтехники</h2>
+                        <p class="carousel--content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora error non, aliquam obcaecati rem eligendi cumque sapiente atque maxime modi!</p>
+                    </div>
+                    <div class="carousel--image col-lg-6">
+                        <img src="images/carousel-img-1.png" alt="image-1">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item--container row">
+                    <div class="carousel--content col-lg-6">
+                        <h4 class="carousel--content-suptitle text-uppercase text-primary">спецтехника</h3>
+                        <h2 class="carousel--content-title">Выгодное приобретение спецтехники</h2>
+                        <p class="carousel--content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora error non, aliquam obcaecati rem eligendi cumque sapiente atque maxime modi!</p>
+                    </div>
+                    <div class="carousel--image col-lg-6">
+                        <img src="images/carousel-img-1.png" alt="image-1">
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="contacts">
+
+        </div>
+    </div>
+</section>
+
+
+<script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

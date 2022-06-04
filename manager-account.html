@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Кабинет менеджера</title>
+</head>
+<body>
+<header class="header bg-primary">
+    <div class="container">
+        <div class="header--inner">
+            <div class="navtoggle navtoggle-sidebar">
+                <span></span>
+            </div> 
+            <a href="index.html"><img src="images/logo.png" class="header--inner-logo" alt="company logo"></a>
+            <ul class="header--inner-nav">
+                <li>
+                    <a href="mailto:mail@example.com" class="header--link" >mail@example.com</a>
+                </li>
+                <li>
+                    <a href="tel:+77750050505" class="header--link">+7 (775) 005-05-05</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link" target="_blank">Наш Instagram</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">Наши адреса</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">Написать в Whatsapp</a>
+                </li>
+            </ul>
+            <ul class="header--inner-nav d-none">
+                <li>
+                    <a href="index.html" class="header--link" >Главная</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">________</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link" target="_blank">Платежи</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">________</a>
+                </li>
+                <li>
+                    <a href="#" class="header--link">________</a>
+                </li>
+            </ul>
+            <div class="header--inner-login d-none">
+                <span class="notification-container">
+                    <img src="images/svg/notification.svg" class="notification">
+                    <div class="notification-circle-container">
+                        <img src="images/svg/notification-circle.svg">
+                        <span class="notification-count">1</span>
+                    </div>
+                </span>
+                <button class="header--inner-login" type="button" id="">
+                    <img src="images/svg/login.svg" alt="login">
+                    <span class="header--inner-login-text">Выйти</span>
+
+                </button>
+            </div>
+            <div class="header--inner-login dropdown">
+                <button class="header--inner-login" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/svg/login.svg" alt="login">
+                    <span class="header--inner-login-text">Войти</span>
+
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="./manager-account.html">Менеджер</a></li>
+                    <li><a class="dropdown-item" href="./partner-account.html">Партнер</a></li>
+                    <li><a class="dropdown-item" href="./admin-account.html">Администратор</a></li>
+                </ul>
+            </div>
+            <div class="navtoggle navtoggle-header">
+                <span></span>
+            </div> 
+        </div>  
+    </div>
+</header>
+
+<aside class="sidebar">
+    <ul class="sidebar--nav">
+        <li>
+            <a href="#" class="sidebar--nav--item">
+                <img src="images/svg/sidebar-icons/account.svg" alt="">
+                <div>
+                    <span>Иванов Иван Иванович</span>
+                    <span class="sidebar--nav--item--subtitle">Менеджер</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar--nav--item active">
+                <img src="images/svg/sidebar-icons/clients.svg" alt="">
+                <span>Пайщики</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<!-- MAIN SECTION -->
+<section class="main-account">
+    <div class="container">
+        <form class="form form-check-manager">
+            <div class="form--title">Проверить по номеру телефона</div>
+            <input type="tel" name="phone" class="form-control mb-4" placeholder="+7 (___) ___-__-__" required>
+                
+            <!-- Button trigger modal -->
+            <div class="text-center my-5">
+                <div class="btn btn-primary shadow-sm" data-bs-toggle="modal" data-bs-target="#checkClientPhoneModal">Проверить</div>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<!-- Modal проверить по телефону-->
+<div class="modal fade" id="checkClientPhoneModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="checkClientPhoneModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-content--check">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <form>
+                <div class="form--title">На указанный номер отправлен sms-код</div>
+                <div class="form--subtitle">Введите sms-код</div>
+                <div class="countdown">02:00</div>
+                
+                <input type="text" class="form-control mb-5 text-center" placeholder="_ _ _ _" required>
+                
+                <div class="modal-btn-container">
+                    <button type="submit" class="btn btn-primary w-100">Подтвердить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal проверить по телефону-->
+
+<div class="modal fade" id="" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="checkClientPhoneModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-content--check">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <form>
+                <div class="form--title">На указанный номер отправлен sms-код</div>
+                <div class="countdown">00:00</div>
+                <button class="form--subtitle w-100">Повторно отправить sms-код</button>
+                
+                <input type="text" class="form-control mb-5 text-center" placeholder="_ _ _ _" required>
+                
+                <div class="modal-btn-container">
+                    <button type="submit" class="btn btn-primary w-100">Подтвердить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

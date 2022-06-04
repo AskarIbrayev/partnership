@@ -1,0 +1,263 @@
+@use '../custom' as *;
+
+@use '../components/typography';
+@use '../components/buttons';
+
+
+.main {
+    .nav {
+        background: $white;
+        padding: 5px 0;
+        margin-top: $header-height;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            @include media-breakpoint-down(lg) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+
+                .logo {
+                    display: none;
+                }
+            }
+        }
+        &--link {
+            font-size: 15px;
+            font-weight: 500;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+.carousel {
+    &-item--container {
+        padding: 80px 0;
+        @include media-breakpoint-down(lg) {
+            padding: 30px 0 50px;
+        }
+        .carousel--content {
+            max-width: 500px;
+            margin: auto 0;
+            &-suptitle {
+                font-size: 16px;
+                font-weight: 500;
+            }
+            &-title {
+                font-size: 32px;
+            }
+            @include media-breakpoint-down(lg) {
+                margin: auto;
+                text-align: center;
+                &-title {
+                    font-size: 28px;
+
+                }
+            }
+            @include media-breakpoint-down(sm) {
+                &-suptitle {
+                    font-size: 14px;
+                }
+                &-title {
+                    font-size: 24px;
+                }
+            }
+        }
+        .carousel--image {
+            max-width: 500px;
+            margin: auto 0 auto auto;
+            @include media-breakpoint-down(lg) {
+                margin: auto;
+            }
+            img {
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    }
+}
+.main-account {
+    margin: $header-height 0 0 $sidebar-width;
+    padding-top: 8px;
+    .filter {
+        max-width: 900px;
+        margin-bottom: 25px;
+        &-input {
+            max-width: 300px;
+            color: #8292A6;
+            font-size: inherit;
+            padding: 11px 20px 14px;
+            // margin-bottom: 16px;
+            border-radius: 6px;
+            border: 1px solid #E7EBF3;
+            margin-bottom: 16px;
+            input {
+                display: block;
+                width: 100%;
+                font-style: italic;
+                border: none;
+                border-bottom: 1px solid #8292A6;
+                &:focus {
+                    outline: none;
+                    border-bottom: 1px solid $primary;
+                }
+            }
+        }
+        &-btn-container {
+            display: inline-block;
+            span {
+                margin-top: 6px;
+                display: block;
+                cursor: pointer;
+                color: #8292A6;
+                &:hover {
+                    color: #455161;
+                }
+            }
+        }
+    }
+    .user-list {
+        background: $white;
+        border-radius: 6px;
+        margin-bottom: 24px;
+        // min-width: 600px;
+
+
+        &--header,
+        &--item {
+            display: grid;
+            grid-template-columns: .75fr 2.5fr 1.5fr 2fr 2fr 1fr;
+            gap: 10px;
+            list-style: none;
+            margin: 0;
+            padding: 16px 12px;
+            
+            text-align: center;
+        }
+        &--header {
+            font-weight: 600;
+            background: rgba($primary, .1);
+            border: 1px solid rgba($primary, .5);
+            border-radius: 6px 6px 0 0;
+        }
+        &--item {
+            border-bottom: 1px solid #F7F7F7;
+            &:last-child{
+                border: none;
+            }
+            &--action {
+                display: flex;
+                gap: 16px;
+                justify-content: flex-end;
+                min-width: 64px;
+                img {
+                    width: auto;
+                    height: 24px;
+                    cursor: pointer;
+                }
+            }
+        }
+        &--footer {
+            text-align: right;
+            margin-bottom: 24px;
+            select {
+                background: none;
+                border: none;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            &-email {
+                display: none;
+            }
+            &--header,
+            &--item {
+                grid-template-columns: .75fr 2.5fr 1.5fr 2fr 1fr;
+                gap: 6px;
+            }
+        }
+        
+    }
+    .form-check-manager {
+        background: none;
+        border: none;
+        .form--title {
+            font-size: 16px;
+        }
+    }
+    .partner-account-form {
+        font-size: 18px;
+        margin: 110px 16px;
+        &--label {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        input {
+            font-size: inherit;
+            padding-left: 16px;
+            border: 2px solid #C4C4C4;
+            max-width: 380px;
+            margin-bottom: 16px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin: 50px auto;
+            label {
+                margin: 0 auto 8px;
+            }
+            input {
+                margin: 0 auto 16px;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        margin: $header-height 0 0;
+    }
+}
+
+.modal-content {
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 552px;
+    border-radius: 18px;
+    border: 1px solid rgba(#C5C5C5, .7);
+    padding: 92px 100px;
+    position: relative;
+    .btn-close {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+        z-index: 1001;
+    }
+    .modal-btn-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    label {
+        font-size: 14px;
+    }
+    input {
+        height: 48px;
+        border: 2px solid #C4C4C4;
+    }
+    &--check {
+        max-width: 450px;
+    }
+    .countdown {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 82px 60px;
+        
+    }
+
+}

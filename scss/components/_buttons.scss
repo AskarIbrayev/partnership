@@ -1,0 +1,51 @@
+@use '../custom' as *;
+@use '../components/typography';
+
+
+
+
+button {
+    background: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    color: unset;
+    outline: none;
+}
+
+.btn-gray {
+    background: #8292A6;
+    border-radius: 6px;
+    font-size: 14px;
+    color: $white;
+    padding: 10px 24px;
+    &:hover {
+        background: rgb(139, 155, 173);
+        color: $white;
+    }
+}
+.btn-primary {
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 55px;
+    border-radius: 6px;
+    &:hover {
+        background: rpba($primary, .9);
+        color: $white;
+    }
+    &:focus {
+        color: $white;
+    }
+}
+.btn-primary-sm {
+    padding: 10px 14px;
+} 
+.btn-secondary {
+    color: $secondary;
+    font-weight: 700;
+    background: $white;
+    border-radius: 6px;
+    border: 2px solid #C4C4C4;
+}
